@@ -9,7 +9,7 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   useGSAP(() => {
-    const heroSplit = new SplitText(".title", { type: "chars, words" });
+    const heroSplit = new SplitText(".title", { type: "chars" });
     const paragraphSplit = new SplitText(".subtitle", { type: "lines" });
 
     heroSplit.chars.forEach((char) => char.classList.add("text-gradient"));
